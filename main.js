@@ -33,9 +33,13 @@ $(document).ready(function() {
 			var inst = setInterval(updateTestimonials, 5000);
 
 			function updateTestimonials() {
+			  //sets the text to the first element in the array
 			  testimonial.innerHTML = testimonials[counter];
+			  //increment by 1
 			  counter++;
+			  //check to see if counter is longer than the length of the array
 			  if (counter >= testimonials.length) {
+			  	//reset it to 0 so it keeps going
 			    counter = 0;
 			  }
 			}
